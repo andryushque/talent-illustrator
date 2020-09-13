@@ -1,0 +1,54 @@
+.projects
+  padding: 8.4rem 0 10rem
+  background-color: $color-light
+  color: $color-dark
+
+  &-wrapper
+    text-align: center
+  &__title
+    margin-bottom: 5.2rem
+    color: $color-dark
+    font: normal 700 3.2rem "Merriweather"
+    text-align: left
+
+  &__cards
+    margin-bottom: 6rem
+  .cards
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 33rem)
+    grid-auto-rows: 33rem
+    grid-gap: 3rem
+    &__item
+      position: relative
+      &:hover
+        cursor: pointer
+        .cards
+          &__content
+            z-index: 10
+            background: rgba($color-dark, 0.8)
+            transition: background 0.5s ease
+      &--3
+        grid-row: span 2
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__content
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -10
+      padding: 4rem
+    &__title
+      margin-bottom: 4rem
+      font: normal 700 3.2rem "Nunito"
+      color: $color-accent
+    &__text
+      margin-bottom: 3rem
+      font: normal 300 1.6rem/2.2rem "Nunito"
+      color: #f7f7f7

@@ -18,14 +18,6 @@ img
   max-width: 100%
   height: auto
 
-.button
-  outline: none
-  border: none
-  text-align: center
-  cursor: pointer
-  word-break: break-word
-  text-decoration: none
-
 .title, .p-text
   margin-top: 0
   margin-bottom: 0
@@ -36,3 +28,39 @@ img
   text-decoration: none
   &:hover
     text-decoration: none
+
+/*=== Buttons ===*/
+.button
+  outline: none
+  border: none
+  text-align: center
+  cursor: pointer
+  word-break: break-word
+  text-decoration: none
+
+.btn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  min-width: 18rem
+  min-height: 4.2rem
+  border-radius: 4.2rem
+  padding: 0 1rem
+  font: normal 400 1.6rem "Nunito"
+  letter-spacing: 0.21px
+  &--accent
+    border: 3px solid $color-accent
+    background-color: $color-accent
+    color: $color-light
+    &:hover
+      background-color: transparent
+      color: $color-dark
+      transition: background-color 0.3s ease, color 0.3s ease
+  &--transparent
+    border: 3px solid $color-light
+    background-color: transparent
+    color: $color-light
+    &:hover
+      background-color: $color-light
+      color: $color-accent
+      transition: background-color 0.3s ease, color 0.3s ease

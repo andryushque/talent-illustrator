@@ -41,5 +41,6 @@ $(document).ready(function () {
     });
   }
 
+  // Active second tab
   document.querySelector(".tabs__nav-btn:nth-child(2)").click();
 });

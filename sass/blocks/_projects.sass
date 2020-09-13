@@ -2,14 +2,12 @@
   padding: 8.4rem 0 10rem
   background-color: $color-light
   color: $color-dark
+  border-bottom: 2px solid rgba($color-grey, 0.25)
 
   &-wrapper
     text-align: center
   &__title
-    margin-bottom: 5.2rem
-    color: $color-dark
-    font: normal 700 3.2rem "Merriweather"
-    text-align: left
+    @include section-title()
 
   &__cards
     margin-bottom: 6rem

@@ -2,7 +2,7 @@
 
 ### Information
 
-"Talent Illustrator" web-site – with portfolio and contact page.
+"Talent Illustrator" web-site – with portfolio single project page.
 
 ### Tech stack
 
